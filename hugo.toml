@@ -2,6 +2,8 @@ baseURL = "https://example.com/"
 languageCode = 'en-us'
 title = 'Thoughts on Credit Risk'
 theme = "PaperMod"
-ShowReadMore = true
+
+[params]
+  ShowReadMore = true
 
 
