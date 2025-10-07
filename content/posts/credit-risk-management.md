@@ -5,7 +5,7 @@ title = 'Credit Risk Management'
 +++
 ### What and Why
 
-The `credit risk managemnet` is very critial for lending industry, as lending business model is to control risk to achieve predictable and profitable return based on pre-set risk appetite. Risk appetite relfects in uncertainty, higher level of uncertainty requires more buffer in margin to cover the risk. Therefore, credit risk manager's role is to align risk appetite with business goal to achieve portfolio growth with calculated risk, and to closely monitor acquisition quality and portfolio performance to ensure well alignment with risk appetite.
+The **credit risk managemnet** is very critial for lending industry, as lending business model is to control risk to achieve predictable and profitable return based on pre-set risk appetite. Risk appetite relfects in uncertainty, higher level of uncertainty requires more buffer in margin to cover the risk. Therefore, credit risk manager's role is to align risk appetite with business goal to achieve portfolio growth with calculated risk, and to closely monitor acquisition quality and portfolio performance to ensure well alignment with risk appetite.
 
 ### Key Challenges
 

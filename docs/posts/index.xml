@@ -13,7 +13,7 @@
       <link>https://example.com/posts/line-philosophy/</link>
       <pubDate>Tue, 07 Oct 2025 08:29:32 -0400</pubDate>
       <guid>https://example.com/posts/line-philosophy/</guid>
-      <description>&lt;p&gt;Initial Line Decision&lt;/p&gt;
+      <description>&lt;h3 id=&#34;initial-line-decision&#34;&gt;Initial Line Decision&lt;/h3&gt;
 &lt;p&gt;In addition to yes or no decision during the application stage, initial ine is one more key decision the lender needs to make. Line is risk exposure, is how much the lender feels comfortable to lend based on estimated repayment ability of borrowers. Therefore line evaluation ties to two main factors, one is estimated repayment amount and one is risk. The first one is critical to make offered line meaningful regarding borrowers&amp;rsquo; financial condition, such as borrowers&amp;rsquo;revenue, borrowing needs. Ignoring the first one will make the lending product less attractive to applicants/customers and will impact product engagement and growth. The second factor regarding risk is critical as it will help control the exposure at each risk level, in order to map to risk appetite at the overall level. The second one usually uses the static segmentation approach, provide the maximal line threshold at respective risk level.&lt;/p&gt;</description>
     </item>
     <item>
@@ -22,7 +22,7 @@
       <pubDate>Mon, 06 Oct 2025 14:23:34 -0400</pubDate>
       <guid>https://example.com/posts/credit-risk-management/</guid>
       <description>&lt;h3 id=&#34;what-and-why&#34;&gt;What and Why&lt;/h3&gt;
-&lt;p&gt;The &lt;code&gt;credit risk managemnet&lt;/code&gt; is very critial for lending industry, as lending business model is to control risk to achieve predictable and profitable return based on pre-set risk appetite. Risk appetite relfects in uncertainty, higher level of uncertainty requires more buffer in margin to cover the risk. Therefore, credit risk manager&amp;rsquo;s role is to align risk appetite with business goal to achieve portfolio growth with calculated risk, and to closely monitor acquisition quality and portfolio performance to ensure well alignment with risk appetite.&lt;/p&gt;</description>
+&lt;p&gt;The &lt;strong&gt;credit risk managemnet&lt;/strong&gt; is very critial for lending industry, as lending business model is to control risk to achieve predictable and profitable return based on pre-set risk appetite. Risk appetite relfects in uncertainty, higher level of uncertainty requires more buffer in margin to cover the risk. Therefore, credit risk manager&amp;rsquo;s role is to align risk appetite with business goal to achieve portfolio growth with calculated risk, and to closely monitor acquisition quality and portfolio performance to ensure well alignment with risk appetite.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction</title>
