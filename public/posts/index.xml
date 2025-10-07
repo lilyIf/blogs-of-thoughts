@@ -6,8 +6,16 @@
     <description>Recent content in Posts on Thoughts on Credit Risk</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 06 Oct 2025 14:23:34 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 07 Oct 2025 08:29:32 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Line Philosophy</title>
+      <link>http://localhost:1313/posts/line-philosophy/</link>
+      <pubDate>Tue, 07 Oct 2025 08:29:32 -0400</pubDate>
+      <guid>http://localhost:1313/posts/line-philosophy/</guid>
+      <description>&lt;h2 id=&#34;importance-of-line&#34;&gt;Importance of Line&lt;/h2&gt;
+&lt;p&gt;Line is risk exposure, is how much the lender feels comfortable to lend based on estimated repayment ability of borrowers. Therefore line evaluation ties to two main factors, one is estimated repayment amount and one is risk. The first one is critical to make offered line meaningful regarding borrowers&amp;rsquo; financial condition, such as borrowers&amp;rsquo;revenue, borrowing needs. Ignoring the first one will make the lending product less attractive to applicants/customers and will impact product engagement and growth. The second factor regarding risk is critical as it will help control the exposure at each risk level, in order to map to risk appetite at the overall level. The second one usually uses the static segmentation approach, provide the maximal line threshold at risk segment.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Credit Risk Management</title>
       <link>http://localhost:1313/posts/credit-risk-management/</link>
