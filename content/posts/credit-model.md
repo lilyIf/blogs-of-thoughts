@@ -1,0 +1,17 @@
++++
+date = '2025-10-07T13:26:35-04:00'
+draft = true
+title = 'Credit Model'
++++
+All the credit strategy should be powered by models if sufficient data samples available, as models can capture much higher dimension of data information compared with the ones processed by human brain. Using new account model as an example, higher dimension means higher degree of discrimination detected from data, and model can capture true defaulter with less sacrifice of non-defaulter. Therefore we usually use *Gini* to measure overall discrimination power and *Capture rate at top X%* to check the potential performance in strategy, the way to use the model to set a cutoff threshold to decline applicants. Once a cutoff has been set, it will be natually bring in two types of errors, type I and type II errors. Type I error (false positive) for credit model is to classify non-defaulters as defaulters and yields decline decision. Type II error (false negative) is to consider defaulters as non-defaulters. The cost of Type I error is lossing a good customer, and cost of Type II error is default risk. Therefore, credit risk management is to design a strategy to manage type II error. However you can consider an extreme case, with a perfect model which can score highest for all the defaulters and we set a threshold perfectly to seperate out all the defaulters from non-defaulters, we will have 0% for both Type I and Type II errors; with imperfect model in reality, type I and type II error trade off with each other based on the cutoff selection, which means we will either sacrifice many good customers for low default risk, or bring in more defaulters for high approval rate. Based on above, we can tell the importance of a powerful model, and importance of cutoff threshold selection on the impact of business growth and credit performance. Therefore, the contribution of a good model to bring in more good customer given the same default risk. 
+
+Another use case which requires the model is around line assignment, the line strategy without model usually only focus on risk and repayment, however the model can introduce long view on card member value (CMV), which is the combination of component such as borrowing revenue, spending revenue and risk cost. Each applicant will be assessed at these three dimensions and the line which provides highest CMV will be offered to customers after layered with many other policies. 
+
+Current models are usually based on supervised machine learning model, however unsupervised model sometime can add value as well, such as used in anomaly detection to clean up data or detect high balance loss. However to assess the feasibility of putting a new types of model to production, we also need to consider its tradeoff in type I and II errors, its implementation complexity, etc..  
+
+Credit model's main challenges are around:
+- data representative: if the modeling data represents the data in production, if relationship between default and independent variables observed in production have been represented in modeling data.
+- data quality: if modeling data contains noise which may mislead the model to model the relationship.
+- model redevelopment/refreshment: as more production data comes in, can we identify a deterioration signal to redevelope the model or make model to have self-learning ability to adapt to the new trend.
+- model interpretation: how to interprete advanced model, such as NN, NLP, LLM in credit decision 
+
