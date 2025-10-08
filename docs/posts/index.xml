@@ -6,23 +6,30 @@
     <description>Recent content in Posts on Thoughts on Credit Risk</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Oct 2025 08:29:32 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 07 Oct 2025 13:26:35 -0400</lastBuildDate>
     <atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Credit Model</title>
+      <link>https://example.com/posts/credit-model/</link>
+      <pubDate>Tue, 07 Oct 2025 13:26:35 -0400</pubDate>
+      <guid>https://example.com/posts/credit-model/</guid>
+      <description>&lt;p&gt;All the credit strategy should be powered by models if sufficient data samples available, as models can capture much higher dimension of data information compared with the ones processed by human brain. Using new account model as an example, higher dimension means higher degree of discrimination detected from data, and model can capture true defaulter with less sacrifice of non-defaulter. Therefore we usually use &lt;em&gt;Gini&lt;/em&gt; to measure overall discrimination power and &lt;em&gt;Capture rate at top X%&lt;/em&gt; to check the potential performance in strategy, the way to use the model to set a cutoff threshold to decline applicants. Once a cutoff has been set, it will be natually bring in two types of errors, type I and type II errors. Type I error (false positive) for credit model is to classify non-defaulters as defaulters and yields decline decision. Type II error (false negative) is to consider defaulters as non-defaulters. The cost of Type I error is lossing a good customer, and cost of Type II error is default risk. Therefore, credit risk management is to design a strategy to manage type II error. However you can consider an extreme case, with a perfect model which can score highest for all the defaulters and we set a threshold perfectly to seperate out all the defaulters from non-defaulters, we will have 0% for both Type I and Type II errors; with imperfect model in reality, type I and type II error trade off with each other based on the cutoff selection, which means we will either sacrifice many good customers for low default risk, or bring in more defaulters for high approval rate. Based on above, we can tell the importance of a powerful model, and importance of cutoff threshold selection on the impact of business growth and credit performance. Therefore, the contribution of a good model to bring in more good customer given the same default risk.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Line Philosophy</title>
       <link>https://example.com/posts/line-philosophy/</link>
       <pubDate>Tue, 07 Oct 2025 08:29:32 -0400</pubDate>
       <guid>https://example.com/posts/line-philosophy/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Initial Line Decision&lt;/strong&gt;
-In addition to yes or no decision during the application stage, initial ine is one more key decision the lender needs to make. Line is risk exposure, is how much the lender feels comfortable to lend based on estimated repayment ability of borrowers. Therefore line evaluation ties to two main factors, one is estimated repayment amount and one is risk. The first one is critical to make offered line meaningful regarding borrowers&amp;rsquo; financial condition, such as borrowers&amp;rsquo;revenue, borrowing needs. Ignoring the first one will make the lending product less attractive to applicants/customers and will impact product engagement and growth. The second factor regarding risk is critical as it will help control the exposure at each risk level, in order to map to risk appetite at the overall level. The second one usually uses the static segmentation approach, provide the maximal line threshold at respective risk level.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;Initial Line Decision&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;In addition to yes or no decision during the application stage, initial ine is one more key decision the lender needs to make. Line is risk exposure, is how much the lender feels comfortable to lend based on estimated repayment ability of borrowers. Therefore line evaluation ties to two main factors, one is estimated repayment amount and one is risk. The first one is critical to make offered line meaningful regarding borrowers&amp;rsquo; financial condition, such as borrowers&amp;rsquo;revenue, borrowing needs. Ignoring the first one will make the lending product less attractive to applicants/customers and will impact product engagement and growth. The second factor regarding risk is critical as it will help control the exposure at each risk level, in order to map to risk appetite at the overall level. The second one usually uses the static segmentation approach, provide the maximal line threshold at respective risk level.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Credit Risk Management</title>
       <link>https://example.com/posts/credit-risk-management/</link>
       <pubDate>Mon, 06 Oct 2025 14:23:34 -0400</pubDate>
       <guid>https://example.com/posts/credit-risk-management/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;What and Why&lt;/strong&gt;
-The &lt;em&gt;credit risk managemnet&lt;/em&gt; is very critial for lending industry, as lending business model is to control risk to achieve predictable and profitable return based on pre-set risk appetite. Risk appetite relfects in uncertainty, higher level of uncertainty requires more buffer in margin to cover the risk. Therefore, credit risk manager&amp;rsquo;s role is to align risk appetite with business goal to achieve portfolio growth with calculated risk, and to closely monitor acquisition quality and portfolio performance to ensure well alignment with risk appetite.&lt;/p&gt;</description>
+      <description>&lt;p&gt;&lt;strong&gt;What and Why&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;em&gt;credit risk managemnet&lt;/em&gt; is very critial for lending industry, as lending business model is to control risk to achieve predictable and profitable return based on pre-set risk appetite. Risk appetite relfects in uncertainty, higher level of uncertainty requires more buffer in margin to cover the risk. Therefore, credit risk manager&amp;rsquo;s role is to align risk appetite with business goal to achieve portfolio growth with calculated risk, and to closely monitor acquisition quality and portfolio performance to ensure well alignment with risk appetite.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Introduction</title>
