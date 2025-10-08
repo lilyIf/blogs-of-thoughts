@@ -7,11 +7,20 @@ All the credit strategy should be powered by models if sufficient data samples a
 
 Another use case which requires the model is around line assignment, the line strategy without model usually only focus on risk and repayment, however the model can introduce long view on card member value (CMV), which is the combination of component such as borrowing revenue, spending revenue and risk cost. Each applicant will be assessed at these three dimensions and the line which provides highest CMV will be offered to customers after layered with many other policies. 
 
-Current models are usually based on supervised machine learning model, however unsupervised model sometime can add value as well, such as used in anomaly detection to clean up data or detect high balance loss. However to assess the feasibility of putting a new types of model to production, we also need to consider its tradeoff in type I and II errors, its implementation complexity, etc..  
+The majoirty of credit models are based on supervised modeling technique as there is tag to be used for prediction, however unsupervised models on the other sidecan add value as well. Unsupervised modeling is a common technique for classification when tag is not available, it's ideal to handle situation when the relationship between dep and indep is not well defined, such as used as anomaly detector or high balance loss capture. However to assess the production feasibility to implement a new modeling technique, it requires many considerations, such as  tradeoff in type I and II errors, implementation complexity, interpretation requirement.  
 
 Credit model's main challenges are around:
-- data representative: if the modeling data represents the data in production, if relationship between default and independent variables observed in production have been represented in modeling data.
-- data quality: if modeling data contains noise which may mislead the model to model the relationship.
-- model redevelopment/refreshment: as more production data comes in, can we identify a deterioration signal to redevelope the model or make model to have self-learning ability to adapt to the new trend.
-- model interpretation: how to interprete advanced model, such as NN, NLP, LLM in credit decision 
+- Data Representative: As modeling data is always the ones have been observed historically. We need to check the following to ensure the model performance is consistent between production and development stages: if the modeling data similar to the data in production, in terms of population coverage and relationship trend.
+- Data Treatment: How to treat blank and outlier in modeling dataset, will they provide meaningful relationship to target variables OR they are just noise.
+- Data Scarcity: How to handle extreme conditions which is rarely shown in modeling data, such as extremely high balance. Sampling technique is one of ways to ensure the model reflects correctly on the biased sitution. 
+- Feature Engineering: Given raw data, how to bring out the insights from data. Traditional way mainly focuses around variable creation. Given recent surge of advanced machine learning techniques, NN and LLM can help capture many patterns exist in time series, NLP to nowadays' models. 
+- Model Redevelopment/Refreshment: As more production data comes in, can we identify a deterioration signal to redevelope the model or make model to have self-learning ability to adapt to the new trend.
+- Model Interpretation: How to interprete advanced model, such as NN, NLP, LLM in credit decision.
+
+Reflect modeling challenges from above, it comes the following focus areas when we conduct model validation:
+1. Model Usage and assumption: understand the model use case in business, and confirm if modeling data is suitable and match model usage; 
+2. Data: ensure modeling data and production data are similar in terms of coverage and behavior; 
+3. Model performance: detect model overfitting by checking model performance consistency across out-of-time and out-of-sample
+4. Ongoing monitoring: set up monitoring strategy to raise alarm on model deterioration and model redevelopment
+
 
