@@ -10,6 +10,7 @@ All credit strategies should be powered by statistical or machine learning model
 To evaluate model performance, we commonly use two metrics:
 - Gini: measures overall discrimination power — how well the model separates defaulters from non-defaulters.
 - Capture Rate at Top X%: assesses how effectively the model ranks defaulters toward the top, which supports cutoff threshold design.
+
 Once a cutoff is set, two types of errors naturally arise:
 - Type I Error (False Positive) – classifying a good customer as a bad one (lost opportunity).
 - Type II Error (False Negative) – classifying a bad customer as a good one (default risk).
