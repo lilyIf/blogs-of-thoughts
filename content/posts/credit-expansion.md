@@ -1,7 +1,7 @@
 +++
-date = '2025-10-08T14:19:27-04:00'
 draft = false
 title = 'Credit Expansion'
+showDate = false
 +++
 Credit expansion is one of the most exciting yet daunting responsibilities for a credit risk manager. It represents an uncharted landscape filled with opportunities and uncertainty. The scope is broad, covering new market entry, new product launches, and expansion into new customer populations.
 

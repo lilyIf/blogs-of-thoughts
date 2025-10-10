@@ -1,7 +1,7 @@
 +++
-date = '2025-10-07T08:29:32-04:00'
 draft = false
 title = 'Line Philosophy'
+showDate = false
 +++
 Initial Line Decision
 

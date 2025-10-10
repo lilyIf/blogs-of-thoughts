@@ -1,7 +1,7 @@
 +++
-date = '2025-10-06T14:23:34-04:00'
 draft = false
 title = 'Credit Risk Management'
+showDate = false
 +++
 **What and Why**
 
