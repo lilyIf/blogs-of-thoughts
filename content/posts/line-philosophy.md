@@ -3,25 +3,40 @@ date = '2025-10-07T08:29:32-04:00'
 draft = false
 title = 'Line Philosophy'
 +++
-**Initial Line Decision**
+Initial Line Decision
 
-In addition to yes or no decision during the application stage, initial ine is one more key decision the lender needs to make. Line is risk exposure, is how much the lender feels comfortable to lend based on estimated repayment ability of borrowers. Therefore line evaluation ties to two main factors, one is estimated repayment amount and one is risk. The first one is critical to make offered line meaningful regarding borrowers' financial condition, such as borrowers'revenue, borrowing needs. Ignoring the first one will make the lending product less attractive to applicants/customers and will impact product engagement and growth. The second factor regarding risk is critical as it will help control the exposure at each risk level, in order to map to risk appetite at the overall level. The second one usually uses the static segmentation approach, provide the maximal line threshold at respective risk level. 
+Beyond the approval or decline decision at the application stage, the initial line assignment is another key step lenders must determine. The credit line represents the risk exposure — essentially, how much the lender is comfortable extending based on the borrower’s estimated repayment capacity.
 
-As mentioned earlier, the key input to line evaluation is repayment ability. Repayment ability can be considered as cash in hand during the loan term after deducting debts obligation from income. Since longer the loan duration more uncertainty it is, line for 12-months loan should be lower than two times of 6 month loan, as we will discount 12 month line due to repayment uncertainty. For small business loan, there are mainly two loan types, one is short term to cover working capital needs and one is for business expansion. For the former one, which is used to cover shortage of cash flow as payable happens several months before receivable, in this situation when we evaluate line, the COGS and OPEX part of revenue will be included in the line equation Vs. for longer term loan, we need to consider EBITA to ensure there is sufficient revenue margin to cover repayment.
+Line evaluation depends on two main dimensions: repayment ability and risk level. The first ensures that the offered line is meaningful and appropriate given the borrower’s financial condition, such as income and borrowing needs. Ignoring this dimension can result in lines that are too low or irrelevant, making the product less attractive and reducing customer engagement and portfolio growth.
 
-**Customer Line Decision**
+The second factor — risk control — ensures that exposure remains consistent with the lender’s overall risk appetite. Typically, a segmentation-based approach is applied, setting maximum line thresholds by risk tier to maintain portfolio-level consistency.
 
-Customer line is managed in a way to further grow loyal customers while control risk exposure once early stress signal surfaces. 
+As mentioned earlier, repayment ability is the key input for line evaluation. It can be approximated as the cash available during the loan term, calculated by deducting debt obligations from income. Because longer loan terms introduce greater uncertainty, a 12-month loan should not simply double the line of a 6-month loan; instead, the 12-month line should be discounted to account for higher repayment uncertainty.
 
-For line increase, it includes *proactive line increase* which means the lender proactively offers line increase to customers with low risk and high needs to ensure they are at the top of their wallet preference, *reactive line increase* is to provide a channel for customers to request line increase due to unsatisfied existing line. The challenge for *proactive line increase* is to capture customers' needs on time and improve line increase efficiency with risk control, the common way to do it is to conduct incremental debt sensitivity analysis to stress test the upper bound of limit.The challenge for *reactive line increase* is to create alternative options to re-visit the line logic, several options we see so far include additional bank connection, financial statements.
+For small business loans, two major types exist:
 
-For line decrease, it can be line reduction, line suspension and account closure due to severity level of stress and repayment behavior. The signal usually comes from either risk or revenue. For example during pandemic period, due to macroeconomic uncertainty condition, the majority of portfolio's line will be reduced with the level ties to risk band to protect portfolio risk exposure. For line suspension or account closure, which means temporary or permernantly no access to the line, it equivalents to reducing line to zero, which usually caused by very certain condition of financial stress, such as internal and external mispayment.
+Short-term loans for working capital needs, and
 
-The best way to manage line decison throughout customer life-cycle is to have consistent line strategy & logic and adjustable ratio to reflect risk and uncertainty.
+Long-term loans for business expansion.
+
+For working capital loans — designed to bridge cash flow gaps when payables precede receivables — the COGS and OPEX components of revenue are included in line estimation. In contrast, for longer-term loans, the evaluation should consider EBITDA, ensuring sufficient profit margin to support repayment over time.
+
+Customer Line Decision
+
+Customer line management aims to reward and grow loyal customers while controlling risk exposure once early stress signals appear.
+
+Line increases generally fall into two types:
+
+Proactive line increases, where the lender offers higher limits to low-risk, high-need customers to maintain top-of-wallet positioning;
+
+Reactive line increases, where customers request higher limits due to dissatisfaction with current line size.
+
+For proactive increases, the challenge lies in identifying customer needs in real time while preserving risk control. This is often achieved through incremental debt sensitivity analysis, which stress-tests the upper boundary of the credit line.
+For reactive increases, the challenge is to revisit the line logic effectively. Common solutions include requesting additional bank connections, updated financial statements, or enhanced income verification to support a revised line decision.
+
+Line decreases can take several forms — line reduction, suspension, or account closure — depending on the severity of financial stress and repayment behavior. Early signals often arise from risk indicators or revenue deterioration. For instance, during periods of macroeconomic uncertainty such as the pandemic, lenders often reduced credit limits across portfolios, scaling down more aggressively in higher-risk bands to contain exposure.
+Line suspension or account closure, effectively reducing exposure to zero, usually occurs under severe stress conditions, such as confirmed payment delinquencies or external defaults.
+
+The most effective way to manage line decisions throughout the customer lifecycle is to maintain a consistent strategy and logic, while using adjustable ratios to reflect evolving risk levels and uncertainty over time.
 
 Thank you for reading!
-
-
-
-
-
