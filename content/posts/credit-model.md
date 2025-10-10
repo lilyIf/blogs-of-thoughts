@@ -23,7 +23,12 @@ Modeling also plays a critical role in credit line assignment. Traditional line 
 
 **Modeling Techniques**
 
-Most credit models use supervised learning, as default outcomes (tags) are available for prediction. However, unsupervised models also add value when outcome tags are unavailable. They are especially useful for anomaly detection or identifying hidden risk clusters (e.g., unusually high balances or suspicious behavior). That said, the feasibility of adopting new modeling techniques depends on several practical considerations — including trade-offs in error types, implementation complexity, and regulatory interpretability.
+Most credit models use supervised learning, as default outcomes (tags) are available for prediction. However, unsupervised models also add value when outcome tags are unavailable. They are especially useful for anomaly detection or identifying hidden risk clusters (e.g., unusually high balances or suspicious behavior). That said, the feasibility of adopting new modeling techniques depends on several practical considerations — including trade-offs in error types, implementation complexity, and regulatory interpretability. For readers interested in applying advanced analytics to credit risk, the following Jupyter notebooks provide hands-on examples using a range of modeling techniques—each serving distinct analytical purposes:
+- KNN and word2vec are featured for unsupervised tasks such as recommendation or identifying clusters without outcome labels: https://github.com/lilyIf/neighborhood-similarity-analysis/blob/main/recommendation-knn-word2vec%20(1).ipynb
+- Supervised approaches like XGBoost, neural networks, and random forests are demonstrated for loan default prediction, where labeled outcomes enable scorecard-style modeling: https://github.com/lilyIf/Credit-approval-decision-modeling-and-analysis/blob/main/loan-approval-prediction-eda-ml-nn-rf.ipynb
+- For text classification and other NLP challenges, the notebooks showcase Long Short-Term Memory (LSTM) networks and Large Language Models (LLMs): https://github.com/lilyIf/text-classification-modeling---NLP/blob/main/text-classification-lstm-nlp-llm%20(2).ipynb
+- Techniques for synthetic data generation are explored using Generative Adversarial Networks (GANs), supporting simulation and privacy-preserving analytics: https://github.com/lilyIf/GAN-synthetic-data-generator/blob/main/gan-synthetic-data-creation.ipynb
+
 
 **Key Modeling Challenges**
 
