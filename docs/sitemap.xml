@@ -23,10 +23,9 @@
     <loc>https://example.com/posts/credit-risk-management/</loc>
     <lastmod>2025-10-06T14:23:34-04:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/my-first-article/</loc>
-    <lastmod>2025-10-06T13:58:50-04:00</lastmod>
-  </url><url>
     <loc>https://example.com/categories/</loc>
+  </url><url>
+    <loc>https://example.com/posts/my-first-article/</loc>
   </url><url>
     <loc>https://example.com/tags/</loc>
   </url>
