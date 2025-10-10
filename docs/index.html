@@ -132,12 +132,8 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>Credit expansion is one of the most exciting yet daunting responsibilities for a credit risk manager. It represents an uncharted landscape filled with opportunities and uncertainty. The scope is broad, covering new market entry, new product launches, and expansion into new customer populations.</p>
-<p>From my experience in new product and population expansion, such initiatives require a highly cautious and data-driven approach. In new population expansion, which often targets higher-risk borrowers with limited credit history, lenders can either start small with sufficient financial reserves, or transfer part of the risk externally to gain early learning benefits.</p>
-<p>In new product expansion, ideally, one can leverage credit bureau data to observe how existing customers perform externally on similar products, aiding model development and risk calibration. Alternatively, comparing products at similar risk levels can help estimate the expected risk level.</p>
-<p>If the new product has historical precedence, it can be mapped to an existing product to infer today’s risk characteristics. When the new product is merely a variant of an existing offering, certain proxy relationships may be derived. However, because different loan terms attract different borrowing motivations, it is often challenging to generalize a direct relationship between the two.</p>
-<p>Once target default rates are defined for each risk band, it becomes critical to establish early default indicators and track them regularly to ensure performance aligns with expectations. Any deviation should be investigated at a granular level, such as by vintage, risk tier, or revenue cohort, to dissect the root cause.</p>
-<p>If the issue is identifiable and correctable, adjustments can be made to restore the portfolio to its target default level, while managing the back book and temporarily pausing new originations in affected segments. However, if the root cause is unclear, or stems from a miscalculated target rate or shifts in the economic environment, the lender must reassess strategy. Depending on the severity of deviation, this may include raising pricing, tightening credit criteria, or reducing exposure to risk segments to contain the risk.</p>
+    <p>Credit expansion is one of the most exciting yet daunting responsibilities for a credit risk manager. It represents an uncharted landscape filled with opportunities and uncertainty. The scope is broad, covering new market entry, new product launches, and expansion into new customer populations. From my experience in new product and population expansion, such initiatives require a highly cautious and data-driven approach. In new population expansion, which often targets higher-risk borrowers with limited credit history, lenders can either start small with sufficient financial reserves, or transfer part of the risk externally to gain early learning benefits. In new product expansion, ideally, one can leverage credit bureau data to observe how existing customers perform externally on similar products, aiding model development and risk calibration. Alternatively, comparing products performance at similar risk levels at overall population can help estimate the expected risk level. If the new product has historical precedence, it can be mapped to an existing product to infer today’s risk characteristics. When the new product is merely a variant of an existing offering, certain proxy relationships may be derived. However, because different loan terms attract different borrowing motivations, it is often challenging to generalize a direct relationship between the two.</p>
+<p>Once target default rates are defined for each risk band, it becomes critical to establish early default indicators and track them regularly to ensure performance aligns with expectations. Any deviation should be investigated at a granular level, such as by vintage, risk tier, or revenue cohort, to dissect the root cause. If the issue is identifiable and correctable, adjustments can be made to restore the portfolio to its target default level, while managing the back book and temporarily pausing new originations in affected segments. However, if the root cause is unclear, or stems from a miscalculated target rate or shifts in the economic environment, the lender must reassess strategy. Depending on the severity of deviation, this may include raising pricing, tightening credit criteria, or reducing exposure to risk segments to contain the risk.</p>
 
   </div>
   <footer class="entry-footer"></footer>
@@ -150,53 +146,38 @@
     </h2>
   </header>
   <div class="entry-content">
-    <p>All the credit strategy should be powered by models if sufficient data samples available, as models can capture much higher dimension of data information compared with the ones processed by human brain. Using new account model as an example, higher dimension means higher degree of discrimination detected from data, and model can capture true defaulter with less sacrifice of non-defaulter. Therefore we usually use <em>Gini</em> to measure overall discrimination power and <em>Capture rate at top X%</em> to check the potential performance in strategy, the way to use the model to set a cutoff threshold to decline applicants. Once a cutoff has been set, it will be natually bring in two types of errors, type I and type II errors. Type I error (false positive) for credit model is to classify non-defaulters as defaulters and yields decline decision. Type II error (false negative) is to consider defaulters as non-defaulters. The cost of Type I error is lossing a good customer, and cost of Type II error is default risk. Therefore, credit risk management is to design a strategy to manage type II error. However you can consider an extreme case, with a perfect model which can score highest for all the defaulters and we set a threshold perfectly to seperate out all the defaulters from non-defaulters, we will have 0% for both Type I and Type II errors; with imperfect model in reality, type I and type II error trade off with each other based on the cutoff selection, which means we will either sacrifice many good customers for low default risk, or bring in more defaulters for high approval rate. Based on above, we can tell the importance of a powerful model, and importance of cutoff threshold selection on the impact of business growth and credit performance. Therefore, the contribution of a good model to bring in more good customer given the same default risk.</p>
-<p>Another use case which requires the model is around line assignment, the line strategy without model usually only focus on risk and repayment, however the model can introduce long view on card member value (CMV), which is the combination of component such as borrowing revenue, spending revenue and risk cost. Each applicant will be assessed at these three dimensions and the line which provides highest CMV will be offered to customers after layered with many other policies.</p>
-<p>The majoirty of credit models are based on supervised modeling technique as there is tag to be used for prediction, however unsupervised models on the other sidecan add value as well. Unsupervised modeling is a common technique for classification when tag is not available, it&rsquo;s ideal to handle situation when the relationship between dep and indep is not well defined, such as used as anomaly detector or high balance loss capture. However to assess the production feasibility to implement a new modeling technique, it requires many considerations, such as  tradeoff in type I and II errors, implementation complexity, interpretation requirement.</p>
-<p>Credit model&rsquo;s main challenges are around:</p>
-<ul>
-<li>Data Representative: As modeling data is always the ones have been observed historically. We need to check the following to ensure the model performance is consistent between production and development stages: if the modeling data similar to the data in production, in terms of population coverage and relationship trend.</li>
-<li>Data Treatment: How to treat blank and outlier in modeling dataset, will they provide meaningful relationship to target variables OR they are just noise.</li>
-<li>Data Scarcity: How to handle extreme conditions which is rarely shown in modeling data, such as extremely high balance. Sampling technique is one of ways to ensure the model reflects correctly on the biased sitution.</li>
-<li>Feature Engineering: Given raw data, how to bring out the insights from data. Traditional way mainly focuses around variable creation. Given recent surge of advanced machine learning techniques, NN and LLM can help capture many patterns exist in time series, NLP to nowadays&rsquo; models.</li>
-<li>Model Redevelopment/Refreshment: As more production data comes in, can we identify a deterioration signal to redevelope the model or make model to have self-learning ability to adapt to the new trend.</li>
-<li>Model Interpretation: How to interprete advanced model, such as NN, NLP, LLM in credit decision.</li>
-</ul>
-<p>Reflect modeling challenges from above, it comes the following focus areas when we conduct model validation:</p>
-<ol>
-<li>Model Usage and assumption: understand the model use case in business, and confirm if modeling data is suitable and match model usage;</li>
-<li>Data: ensure modeling data and production data are similar in terms of coverage and behavior;</li>
-<li>Model performance: detect model overfitting by checking model performance consistency across out-of-time and out-of-sample</li>
-<li>Ongoing monitoring: set up monitoring strategy to raise alarm on model deterioration and model redevelopment</li>
-</ol>
-<p>Model-Driven Credit Strategy</p>
+    <p><strong>Model-Driven Credit Strategy</strong></p>
 <p>All credit strategies should be powered by statistical or machine learning models whenever sufficient data samples are available. Models can process and capture far higher-dimensional data relationships than human judgment alone. Taking a new account model as an example, a higher-dimensional model can better differentiate between good and bad applicants — identifying true defaulters with less sacrifice of non-defaulters.</p>
 <p>To evaluate model performance, we commonly use two metrics:</p>
-<p>Gini: measures overall discrimination power — how well the model separates defaulters from non-defaulters.</p>
-<p>Capture Rate at Top X%: assesses how effectively the model ranks defaulters toward the top, which supports cutoff threshold design.</p>
-<p>Once a cutoff is set, two types of errors naturally arise:</p>
-<p>Type I Error (False Positive) – classifying a good customer as a bad one (lost opportunity).</p>
-<p>Type II Error (False Negative) – classifying a bad customer as a good one (default risk).</p>
+<ul>
+<li>Gini: measures overall discrimination power — how well the model separates defaulters from non-defaulters.</li>
+<li>Capture Rate at Top X%: assesses how effectively the model ranks defaulters toward the top, which supports cutoff threshold design.
+Once a cutoff is set, two types of errors naturally arise:</li>
+<li>Type I Error (False Positive) – classifying a good customer as a bad one (lost opportunity).</li>
+<li>Type II Error (False Negative) – classifying a bad customer as a good one (default risk).</li>
+</ul>
 <p>In practice, credit risk management is about balancing these two errors — minimizing defaults (Type II) while maintaining growth. In theory, a perfect model with ideal separation would yield 0% for both errors, but in reality, improving one usually worsens the other. This trade-off underscores the dual importance of model quality and cutoff calibration, as both directly impact portfolio growth and credit performance. A stronger model enables lenders to approve more good customers for the same level of default risk.</p>
-<p>Model Use in Line Assignment</p>
-<p>Modeling also plays a critical role in credit line assignment. Traditional line strategies often focus only on risk and repayment ability. However, model-based approaches can incorporate a long-term value perspective through Card Member Value (CMV) modeling.</p>
-<p>CMV combines multiple dimensions — such as borrowing revenue, spending revenue, and risk cost — to estimate expected profitability. By modeling these factors jointly, the optimal credit line is assigned to maximize CMV while staying aligned with policy constraints.</p>
-<p>Modeling Techniques and Challenges</p>
-<p>Most credit models use supervised learning, as default outcomes (tags) are available for prediction. However, unsupervised models also add value when outcome tags are unavailable. They are especially useful for anomaly detection or identifying hidden risk clusters (e.g., unusually high balances or suspicious behavior).</p>
-<p>That said, the feasibility of adopting new modeling techniques depends on several practical considerations — including trade-offs in error types, implementation complexity, and regulatory interpretability.</p>
-<p>Key Modeling Challenges</p>
-<p>Data Representativeness – Modeling data should mirror production data in both population and relationship patterns to maintain stable performance.</p>
-<p>Data Treatment – Blanks, outliers, and anomalies must be carefully handled to avoid introducing noise or bias.</p>
-<p>Data Scarcity – Extreme or rare scenarios (e.g., very high balances) may be underrepresented; sampling techniques can help balance this.</p>
-<p>Feature Engineering – Extracting insights from raw data remains fundamental. With advances in ML, neural networks (NN) and large language models (LLMs) can now uncover temporal or linguistic patterns beyond traditional variables.</p>
-<p>Model Refresh &amp; Adaptation – Continuous monitoring helps detect performance drift; models may need redevelopment or adaptive self-learning capabilities.</p>
-<p>Interpretability – As models become more complex (e.g., NN, NLP, LLM), explainability becomes critical for credit decisioning and compliance.</p>
-<p>Focus Areas in Model Validation</p>
+<p><strong>Model Use in Other Credit Decision</strong></p>
+<p>Modeling also plays a critical role in credit line assignment. Traditional line strategies often focus only on risk and repayment ability. However, model-based approaches can incorporate a long-term value perspective through Card Member Value (CMV) modeling. CMV combines multiple dimensions — such as borrowing revenue, spending revenue, and risk cost — to estimate expected profitability. By modeling these factors jointly, the optimal credit line is assigned to maximize CMV while staying aligned with policy constraints.</p>
+<p><strong>Modeling Techniques</strong></p>
+<p>Most credit models use supervised learning, as default outcomes (tags) are available for prediction. However, unsupervised models also add value when outcome tags are unavailable. They are especially useful for anomaly detection or identifying hidden risk clusters (e.g., unusually high balances or suspicious behavior). That said, the feasibility of adopting new modeling techniques depends on several practical considerations — including trade-offs in error types, implementation complexity, and regulatory interpretability.</p>
+<p><strong>Key Modeling Challenges</strong></p>
+<ul>
+<li>Data Representativeness: Modeling data should mirror production data in both population and relationship patterns to maintain stable performance.</li>
+<li>Data Treatment: Blanks, outliers, and anomalies must be carefully handled to ensure clear interpretaion and avoid introducing noise or bias.</li>
+<li>Data Scarcity: Extreme or rare scenarios (e.g., very high balances) may be underrepresented; sampling techniques can help balance this.</li>
+<li>Feature Engineering: Extracting insights from raw data remains fundamental. With advances in ML, neural networks (NN) and large language models (LLMs) can now uncover time-series trend or linguistic patterns beyond traditional variables.</li>
+<li>Model Refresh &amp; Adaptation: Continuous monitoring helps detect performance drift; models may need redevelopment or adaptive self-learning capabilities.</li>
+<li>Interpretability: As models become more complex (e.g., NN, NLP, LLM), explainability becomes critical for credit decisioning and compliance.</li>
+</ul>
+<p><strong>Focus Areas in Model Validation</strong></p>
 <p>Given these challenges, effective model validation should emphasize:</p>
-<p>Usage &amp; Assumptions – Confirm the model’s intended business purpose and ensure data aligns with that use case.</p>
-<p>Data Consistency – Validate that modeling and production datasets are comparable in coverage and behavior.</p>
-<p>Performance Stability – Detect overfitting through out-of-time and out-of-sample tests.</p>
-<p>Ongoing Monitoring – Establish thresholds and alerts to identify performance deterioration and trigger redevelopment when needed.</p>
+<ul>
+<li>Usage &amp; Assumptions: Confirm the model’s intended business purpose and ensure data aligns with that use case.</li>
+<li>Data Consistency: Validate that modeling and production datasets are comparable in coverage and behavior.</li>
+<li>Performance Stability: Detect overfitting through out-of-time and out-of-sample tests.</li>
+<li>Ongoing Monitoring: Establish thresholds and alerts to identify performance deterioration and trigger redevelopment when needed.</li>
+</ul>
 
   </div>
   <footer class="entry-footer"></footer>
@@ -210,29 +191,19 @@
   </header>
   <div class="entry-content">
     <p><strong>What and Why</strong></p>
-<p>The <em>credit risk managemnet</em> is very critial for lending industry, as lending business model is to control risk to achieve predictable and profitable return based on pre-set risk appetite. Risk appetite relfects in uncertainty, higher level of uncertainty requires more buffer in margin to cover the risk. Therefore, credit risk manager&rsquo;s role is to align risk appetite with business goal to achieve portfolio growth with calculated risk, and to closely monitor acquisition quality and portfolio performance to ensure well alignment with risk appetite.</p>
-<p><strong>Key Challenges</strong></p>
-<p>The challenging parts of this role to adjust policies to accomodate the ever-changing of credit risk caused by macroeconomic conditions and customer/applicant&rsquo;s conditions. Credit risk management involves the risk accessment throughout customer life-cycle. I listed key challenges which we often face in consumer/small business credit risk management, and will discuss more in the following articles:</p>
-<ul>
-<li>Acquisition stage: How to assess credit risk for new products? How to assess risk of new population?</li>
-<li>Acquisition stage: If there is a sign of deterioration during early customer journey, how to identify the root cause and make policy changes?</li>
-<li>Acquisition stage: How to appropriately assign initial line, so it&rsquo;s not too low to disappoint applicants while maintaining risk control.</li>
-<li>Customer management stage: How to define the customer strategy, such as line increase, line decrease, account suspension, account closed.</li>
-<li>Pricing: How risk impacts pricing, how to create dynamic risk-based pricing.</li>
-<li>Modeling: How to leverage machine learning and new data sources to discover the early sign of financial distress.</li>
-</ul>
-<p>What and Why</p>
 <p>Credit risk management is a cornerstone of the lending industry. Since the lending business model relies on balancing risk and return, the key objective is to control credit risk to achieve predictable and profitable outcomes within a defined risk appetite.</p>
 <p>A lender’s risk appetite reflects its tolerance for uncertainty — the higher the uncertainty, the greater the margin buffer required to absorb potential losses. Therefore, the role of a credit risk manager is to align risk appetite with business goals, driving portfolio growth with calculated risk, while continuously monitoring acquisition quality and portfolio performance to ensure ongoing alignment with strategy.</p>
-<p>Key Challenges</p>
+<p><strong>Key Challenges</strong></p>
 <p>One of the main challenges in credit risk management is the need to adapt policies to an ever-changing risk environment — influenced by both macroeconomic conditions and shifts in customer behavior or applicant profiles. Effective credit risk management requires risk assessment across the entire customer lifecycle, from acquisition to ongoing account management.</p>
 <p>Below are some of the key challenges commonly faced in consumer and small business credit risk management, which I will explore further in upcoming articles:</p>
-<p>Acquisition stage: How should credit risk be assessed for new products or new customer populations?</p>
-<p>Early performance: If signs of deterioration appear during the initial customer journey, how can we identify root causes and adjust policies accordingly?</p>
-<p>Credit line assignment: How do we determine an appropriate initial line, balancing customer experience with risk control?</p>
-<p>Customer management: How should we define customer strategies such as line increases, line decreases, suspensions, or closures?</p>
-<p>Pricing: How does risk influence pricing, and how can we design dynamic, risk-based pricing strategies?</p>
-<p>Modeling: How can machine learning and alternative data be leveraged to detect early signs of financial distress?</p>
+<ul>
+<li>Acquisition stage: How should credit risk be assessed for new products or new customer populations?</li>
+<li>Early performance: If signs of deterioration appear during the initial customer journey, how can we identify root causes and adjust policies accordingly?</li>
+<li>Credit line assignment: How do we determine an appropriate initial line, balancing customer experience with risk control?</li>
+<li>Customer management: How should we define customer strategies such as line increases, line decreases, suspensions, or closures?</li>
+<li>Pricing: How does risk influence pricing, and how can we design dynamic, risk-based pricing strategies?</li>
+<li>Modeling: How can machine learning and alternative data be leveraged to detect early signs of financial distress?</li>
+</ul>
 <p>Thank you for reading!</p>
 
   </div>
@@ -242,44 +213,23 @@
 
 <article class="post-entry"> 
   <header class="entry-header">
-    <h2 class="entry-hint-parent">Introduction
-    </h2>
-  </header>
-  <div class="entry-content">
-    <p>Hello, Here is the place for me to share the thoughts around credit risk management based on my professional experience. I would like to use this space to inspire continuous learning and growth, and to truly master the essense of lending risk.  date = &lsquo;2025-10-06T13:58:50-04:00&rsquo;</p>
-<p>Hello! Welcome to my space, where I share insights and reflections on credit risk management drawn from my professional experience. My goal is to use this platform to inspire continuous learning and deepen the understanding of the true essence of lending risk.</p>
-
-  </div>
-  <footer class="entry-footer"></footer>
-  <a class="entry-link" aria-label="post link to Introduction" href="https://example.com/posts/my-first-article/"></a>
-</article>
-
-<article class="post-entry"> 
-  <header class="entry-header">
     <h2 class="entry-hint-parent">Line Philosophy
     </h2>
   </header>
   <div class="entry-content">
-    <p>Initial Line Decision</p>
-<p>Beyond the approval or decline decision at the application stage, the initial line assignment is another key step lenders must determine. The credit line represents the risk exposure — essentially, how much the lender is comfortable extending based on the borrower’s estimated repayment capacity.</p>
-<p>Line evaluation depends on two main dimensions: repayment ability and risk level. The first ensures that the offered line is meaningful and appropriate given the borrower’s financial condition, such as income and borrowing needs. Ignoring this dimension can result in lines that are too low or irrelevant, making the product less attractive and reducing customer engagement and portfolio growth.</p>
-<p>The second factor — risk control — ensures that exposure remains consistent with the lender’s overall risk appetite. Typically, a segmentation-based approach is applied, setting maximum line thresholds by risk tier to maintain portfolio-level consistency.</p>
+    <p><strong>Initial Line Decision</strong></p>
+<p>Beyond the approval or decline decision at the application stage, the initial line assignment is another key step lenders must determine. The credit line represents the risk exposure — essentially, how much the lender is comfortable extending based on the borrower’s estimated repayment capacity. Line evaluation depends on two main dimensions: repayment ability and risk level. The first ensures that the offered line is meaningful and appropriate given the borrower’s financial condition, such as income and borrowing needs. Ignoring this dimension can result in lines that are too low or irrelevant, making the product less attractive and reducing customer engagement and portfolio growth. The second factor — risk control — ensures that exposure remains consistent with the lender’s overall risk appetite. Typically, a segmentation-based approach is applied, setting maximum line thresholds by risk tier to maintain portfolio-level consistency.</p>
 <p>As mentioned earlier, repayment ability is the key input for line evaluation. It can be approximated as the cash available during the loan term, calculated by deducting debt obligations from income. Because longer loan terms introduce greater uncertainty, a 12-month loan should not simply double the line of a 6-month loan; instead, the 12-month line should be discounted to account for higher repayment uncertainty.</p>
-<p>For small business loans, two major types exist:</p>
-<p>Short-term loans for working capital needs, and</p>
-<p>Long-term loans for business expansion.</p>
-<p>For working capital loans — designed to bridge cash flow gaps when payables precede receivables — the COGS and OPEX components of revenue are included in line estimation. In contrast, for longer-term loans, the evaluation should consider EBITDA, ensuring sufficient profit margin to support repayment over time.</p>
-<p>Customer Line Decision</p>
-<p>Customer line management aims to reward and grow loyal customers while controlling risk exposure once early stress signals appear.</p>
-<p>Line increases generally fall into two types:</p>
-<p>Proactive line increases, where the lender offers higher limits to low-risk, high-need customers to maintain top-of-wallet positioning;</p>
-<p>Reactive line increases, where customers request higher limits due to dissatisfaction with current line size.</p>
-<p>For proactive increases, the challenge lies in identifying customer needs in real time while preserving risk control. This is often achieved through incremental debt sensitivity analysis, which stress-tests the upper boundary of the credit line.
-For reactive increases, the challenge is to revisit the line logic effectively. Common solutions include requesting additional bank connections, updated financial statements, or enhanced income verification to support a revised line decision.</p>
-<p>Line decreases can take several forms — line reduction, suspension, or account closure — depending on the severity of financial stress and repayment behavior. Early signals often arise from risk indicators or revenue deterioration. For instance, during periods of macroeconomic uncertainty such as the pandemic, lenders often reduced credit limits across portfolios, scaling down more aggressively in higher-risk bands to contain exposure.
-Line suspension or account closure, effectively reducing exposure to zero, usually occurs under severe stress conditions, such as confirmed payment delinquencies or external defaults.</p>
-<p>The most effective way to manage line decisions throughout the customer lifecycle is to maintain a consistent strategy and logic, while using adjustable ratios to reflect evolving risk levels and uncertainty over time.</p>
-<p>Thank you for reading!</p>
+<p>For small business loans, two major types exist: short-term loans for working capital needs and long-term loans for business expansion. For working capital loans — designed to bridge cash flow gaps when payables precede receivables — the COGS and OPEX components of revenue are included in line estimation. In contrast, for longer-term loans, the evaluation should consider EBITDA, ensuring sufficient profit margin to support repayment over time.</p>
+<p><strong>Customer Line Decision</strong></p>
+<p>Customer line management aims to reward and grow loyal customers while controlling risk exposure once early stress signals appear. Line increases generally fall into two types:</p>
+<ul>
+<li>Proactive line increases, where the lender offers higher limits to low-risk, high-need customers to maintain top-of-wallet positioning;</li>
+<li>Reactive line increases, where customers request higher limits due to dissatisfaction with current line size.</li>
+</ul>
+<p>For proactive increases, the challenge lies in identifying customer needs in real time while preserving risk control. This is often achieved through incremental debt sensitivity analysis, which stress-tests the upper boundary of the credit line. For reactive increases, the challenge is to revisit the line logic effectively. Common solutions include requesting additional bank connections, updated financial statements, or enhanced income verification to support a revised line decision.</p>
+<p>Line decreases can take several forms — line reduction, suspension, or account closure — depending on the severity of financial stress and repayment behavior. Early signals often arise from risk indicators or revenue deterioration. For instance, during periods of macroeconomic uncertainty such as the pandemic, lenders often reduced credit limits across portfolios, scaling down more aggressively in higher-risk bands to contain exposure. Line suspension or account closure, effectively reducing exposure to zero, usually occurs under severe stress conditions, such as confirmed payment delinquencies or external defaults.</p>
+<p>The most effective way to manage line decisions throughout the customer lifecycle is to maintain a consistent line strategy and logic, while using adjustable ratios to reflect evolving risk levels and uncertainty over time.</p>
 
   </div>
   <footer class="entry-footer"></footer>
@@ -294,7 +244,7 @@ Line suspension or account closure, effectively reducing exposure to zero, usual
   <div class="entry-content">
     <p>Pricing is one of the most critical decisions in lending, typically co-owned by the product and risk teams, as it has a direct and significant impact on customer behavior and product usage. We’ve often observed shifts in loan term adoption driven purely by changes in the pricing strategy. Because pricing and risk are inseparable, an effective pricing framework must be built on a comprehensive understanding of risk levels and their inherent uncertainty.</p>
 <p>Several approaches can guide pricing decisions. One method focuses on the loss coverage ratio, ensuring that higher-risk segments are assigned higher margins to compensate for greater uncertainty. Another strategy relies on maintaining a minimum Return on Economic Capital (ROEC), embedding risk uncertainty into the return requirement. Both approaches ensure that pricing adequately covers expected losses and variability in performance. For low-risk segments, lenders may also consider competitive pricing to capture high-quality, low-margin balances and strengthen portfolio stability.</p>
-<p>Initial pricing is usually set by discrete risk bands, but as customers progress through their lifecycle, a dynamic, risk-based pricing strategy becomes essential. This involves periodically reassessing rates to reflect updated risk profiles, particularly for customers whose risk ratings have deteriorated over time. The frequency and triggers for repricing depend on both business needs and the technical infrastructure supporting risk monitoring and pricing execution.</p>
+<p>Initial pricing is usually set by static discrete risk bands, but as customers progress through their lifecycle, a dynamic, risk-based pricing strategy becomes essential. This involves periodically reassessing rates to reflect updated risk profiles, particularly for customers whose risk ratings have deteriorated over time. The frequency and triggers for repricing depend on both business needs and the technical infrastructure supporting risk monitoring and pricing execution.</p>
 
   </div>
   <footer class="entry-footer"></footer>
