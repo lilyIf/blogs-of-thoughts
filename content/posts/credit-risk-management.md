@@ -5,9 +5,7 @@ showDate = false
 +++
 **What and Why**
 
-Credit risk management is a cornerstone of the lending industry. Since the lending business model relies on balancing risk and return, the key objective is to control credit risk to achieve predictable and profitable outcomes within a defined risk appetite.
-
-A lender’s risk appetite reflects its tolerance for uncertainty — the higher the uncertainty, the greater the margin buffer required to absorb potential losses. Therefore, the role of a credit risk manager is to align risk appetite with business goals, driving portfolio growth with calculated risk, while continuously monitoring acquisition quality and portfolio performance to ensure ongoing alignment with strategy.
+Credit risk management is a cornerstone of the lending industry. Since the lending business model relies on balancing risk and return, the key objective is to control credit risk to achieve predictable and profitable outcomes within a defined risk appetite. A lender’s risk appetite reflects its tolerance for uncertainty — the higher the uncertainty, the greater the margin buffer required to absorb potential losses. Therefore, the role of a credit risk manager is to align risk appetite with business goals, driving portfolio growth with calculated risk, while continuously monitoring acquisition quality and portfolio performance to ensure ongoing alignment with strategy.
 
 **Key Challenges**
 
