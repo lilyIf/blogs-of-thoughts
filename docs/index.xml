@@ -8,13 +8,6 @@
     <language>en-us</language>
     <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Credit Deshboard: A Core Function of Credit Teams</title>
-      <link>https://example.com/posts/portfolio-tracking/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/posts/portfolio-tracking/</guid>
-      <description>&lt;p&gt;Monitoring credit dashboard is one of the most critical responsibilities of a credit team. It ultimately determines a lender’s profitability. For credit team, the dashboard can provide the information to help detect early warning signals of credit deterioration and informs future credit strategies—whether to expand or tighten credit criteria. Beyond the credit team, other departments such as Finance and Product teams also rely on portfolio performance tracking reports. The Finance team uses the insights to refine financial projections, while the Product team leverages them to evaluate and adjust pricing strategies.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Credit Expansion</title>
       <link>https://example.com/posts/credit-expansion/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
