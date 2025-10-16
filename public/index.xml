@@ -6,29 +6,52 @@
     <description>Recent content on Thoughts on Credit Risk</description>
     <generator>Hugo -- 0.151.0</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Oct 2025 08:29:32 -0400</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Line Philosophy</title>
-      <link>http://localhost:1313/posts/line-philosophy/</link>
-      <pubDate>Tue, 07 Oct 2025 08:29:32 -0400</pubDate>
-      <guid>http://localhost:1313/posts/line-philosophy/</guid>
-      <description>&lt;h2 id=&#34;importance-of-line&#34;&gt;Importance of Line&lt;/h2&gt;
-&lt;p&gt;Line is risk exposure, is how much the lender feels comfortable to lend based on estimated repayment ability of borrowers.&lt;/p&gt;</description>
+      <title>Credit Deshboard: A Core Function of Credit Teams</title>
+      <link>http://localhost:1313/posts/portfolio-tracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/portfolio-tracking/</guid>
+      <description>&lt;p&gt;Monitoring credit dashboard is one of the most critical responsibilities of a credit team. It ultimately determines a lender’s profitability. For credit team, the dashboard can provide the information to help detect early warning signals of credit deterioration and informs future credit strategies—whether to expand or tighten credit criteria. Beyond the credit team, other departments such as Finance and Product teams also rely on portfolio performance tracking reports. The Finance team uses the insights to refine financial projections, while the Product team leverages them to evaluate and adjust pricing strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Credit Expansion</title>
+      <link>http://localhost:1313/posts/credit-expansion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/credit-expansion/</guid>
+      <description>&lt;p&gt;Credit expansion is one of the most exciting yet daunting responsibilities for a credit risk manager. It represents an uncharted landscape filled with opportunities and uncertainty. The scope is broad, covering new market entry, new product launches, and expansion into new customer populations. From my experience in new product and population expansion, such initiatives require a highly cautious and data-driven approach. In new population expansion, which often targets higher-risk borrowers with limited credit history, lenders can either start small with sufficient financial reserves, or transfer part of the risk externally to gain early learning benefits. In new product expansion, ideally, one can leverage credit bureau data to observe how existing customers perform externally on similar products, aiding model development and risk calibration. Alternatively, comparing products performance at similar risk levels at overall population can help estimate the expected risk level. If the new product has historical precedence, it can be mapped to an existing product to infer today’s risk characteristics. When the new product is merely a variant of an existing offering, certain proxy relationships may be derived. However, because different loan terms attract different borrowing motivations, it is often challenging to generalize a direct relationship between the two.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Credit Model</title>
+      <link>http://localhost:1313/posts/credit-model/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/credit-model/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Model-Driven Credit Strategy&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;All credit strategies should be powered by statistical or machine learning models whenever sufficient data samples are available. Models can process and capture far higher-dimensional data relationships than human judgment alone. Taking a new account model as an example, a higher-dimensional model can better differentiate between good and bad applicants — identifying true defaulters with less sacrifice of non-defaulters.&lt;/p&gt;
+&lt;p&gt;To evaluate model performance, we commonly use two metrics:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Credit Risk Management</title>
       <link>http://localhost:1313/posts/credit-risk-management/</link>
-      <pubDate>Mon, 06 Oct 2025 14:23:34 -0400</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/posts/credit-risk-management/</guid>
-      <description></description>
+      <description>&lt;p&gt;&lt;strong&gt;What and Why&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Credit risk management is a cornerstone of the lending industry. Since the lending business model relies on balancing risk and return, the key objective is to control credit risk to achieve predictable and profitable outcomes within a defined risk appetite. A lender’s risk appetite reflects its tolerance for uncertainty — the higher the uncertainty, the greater the margin buffer required to absorb potential losses. Therefore, the role of a credit risk manager is to align risk appetite with business goals, driving portfolio growth with calculated risk, while continuously monitoring acquisition quality and portfolio performance to ensure ongoing alignment with strategy.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Introduction</title>
-      <link>http://localhost:1313/posts/my-first-article/</link>
-      <pubDate>Mon, 06 Oct 2025 13:58:50 -0400</pubDate>
-      <guid>http://localhost:1313/posts/my-first-article/</guid>
-      <description>&lt;p&gt;Hello, Here is the place for me to share the thoughts around credit risk management based on my professional experience. I would like to use this space to inspire continuous learning and growth, and to truly master the essense of lending risk.&lt;/p&gt;</description>
+      <title>Line Philosophy</title>
+      <link>http://localhost:1313/posts/line-philosophy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/line-philosophy/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Initial Line Decision&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Beyond the approval or decline decision at the application stage, the initial line assignment is another key step lenders must determine. The credit line represents the risk exposure — essentially, how much the lender is comfortable extending based on the borrower’s estimated repayment capacity. Line evaluation depends on two main dimensions: repayment ability and risk level. The first ensures that the offered line is meaningful and appropriate given the borrower’s financial condition, such as income and borrowing needs. Ignoring this dimension can result in lines that are too low or irrelevant, making the product less attractive and reducing customer engagement and portfolio growth. The second factor — risk control — ensures that exposure remains consistent with the lender’s overall risk appetite. Typically, a segmentation-based approach is applied, setting maximum line thresholds by risk tier to maintain portfolio-level consistency.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Pricing</title>
+      <link>http://localhost:1313/posts/pricing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/pricing/</guid>
+      <description>&lt;p&gt;Pricing is one of the most critical decisions in lending, typically co-owned by the product and risk teams, as it has a direct and significant impact on customer behavior and product usage. We’ve often observed shifts in loan term adoption driven purely by changes in the pricing strategy. Because pricing and risk are inseparable, an effective pricing framework must be built on a comprehensive understanding of risk levels and their inherent uncertainty.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -5,12 +5,11 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="noindex, nofollow">
-<title>Credit Risk Management | Thoughts on Credit Risk</title>
+<title>Credit Deshboard: A Core Function of Credit Teams | Thoughts on Credit Risk</title>
 <meta name="keywords" content="">
-<meta name="description" content="What and Why
-Credit risk management is a cornerstone of the lending industry. Since the lending business model relies on balancing risk and return, the key objective is to control credit risk to achieve predictable and profitable outcomes within a defined risk appetite. A lender’s risk appetite reflects its tolerance for uncertainty — the higher the uncertainty, the greater the margin buffer required to absorb potential losses. Therefore, the role of a credit risk manager is to align risk appetite with business goals, driving portfolio growth with calculated risk, while continuously monitoring acquisition quality and portfolio performance to ensure ongoing alignment with strategy.">
+<meta name="description" content="Monitoring credit dashboard is one of the most critical responsibilities of a credit team. It ultimately determines a lender’s profitability. For credit team, the dashboard can provide the information to help detect early warning signals of credit deterioration and informs future credit strategies—whether to expand or tighten credit criteria. Beyond the credit team, other departments such as Finance and Product teams also rely on portfolio performance tracking reports. The Finance team uses the insights to refine financial projections, while the Product team leverages them to evaluate and adjust pricing strategies.">
 <meta name="author" content="">
-<link rel="canonical" href="http://localhost:1313/posts/credit-risk-management/">
+<link rel="canonical" href="http://localhost:1313/posts/portfolio-tracking/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.a090830a421002426baafbd314e38f149d77b4c48a12ee9312700d770b27fb26.css" integrity="sha256-oJCDCkIQAkJrqvvTFOOPFJ13tMSKEu6TEnANdwsn&#43;yY=" rel="preload stylesheet" as="style">
 <link rel="icon" href="http://localhost:1313/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
@@ -19,7 +18,7 @@ Credit risk management is a cornerstone of the lending industry. Since the lendi
 <link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/credit-risk-management/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/portfolio-tracking/">
 <noscript>
     <style>
         #theme-toggle,
@@ -108,26 +107,55 @@ Credit risk management is a cornerstone of the lending industry. Since the lendi
   <header class="post-header">
     
     <h1 class="post-title entry-hint-parent">
-      Credit Risk Management
+      Credit Deshboard: A Core Function of Credit Teams
     </h1>
     <div class="post-meta">
 
 </div>
   </header> 
-  <div class="post-content"><p><strong>What and Why</strong></p>
-<p>Credit risk management is a cornerstone of the lending industry. Since the lending business model relies on balancing risk and return, the key objective is to control credit risk to achieve predictable and profitable outcomes within a defined risk appetite. A lender’s risk appetite reflects its tolerance for uncertainty — the higher the uncertainty, the greater the margin buffer required to absorb potential losses. Therefore, the role of a credit risk manager is to align risk appetite with business goals, driving portfolio growth with calculated risk, while continuously monitoring acquisition quality and portfolio performance to ensure ongoing alignment with strategy.</p>
-<p><strong>Key Challenges</strong></p>
-<p>One of the main challenges in credit risk management is the need to adapt policies to an ever-changing risk environment — influenced by both macroeconomic conditions and shifts in customer behavior or applicant profiles. Effective credit risk management requires risk assessment across the entire customer lifecycle, from acquisition to ongoing account management.</p>
-<p>Below are some of the key challenges commonly faced in consumer and small business credit risk management, which I will explore further in upcoming articles:</p>
+  <div class="post-content"><p>Monitoring credit dashboard is one of the most critical responsibilities of a credit team. It ultimately determines a lender’s profitability. For credit team, the dashboard can provide the information to help detect early warning signals of credit deterioration and informs future credit strategies—whether to expand or tighten credit criteria. Beyond the credit team, other departments such as Finance and Product teams also rely on portfolio performance tracking reports. The Finance team uses the insights to refine financial projections, while the Product team leverages them to evaluate and adjust pricing strategies.</p>
+<p>When designing a portfolio credit dashboard, it’s helpful to structure it into standard section, which are monitored regularly, and designated section, which are used for specific conditions or functional teams&rsquo; needs.</p>
+<p><strong>Standard Sections</strong></p>
+<ol>
+<li><em>Delinquency Rate</em></li>
+</ol>
+<p>Delinquency or write-off (WO) is commonly defined at 90 days past due (90+ DPD). The delinquency rate is typically calculated as:
+Delinquent balance ÷ Total Accounts Receivable (AR).This metric provides a simple and intuitive measure for the Finance team to estimate the expected annualized write-off rate at AR level. However, for a growing portfolio or newly release lending product, this metric can be misleading because AR growth naturally suppresses the apparent delinquency rate. To address this, a more accurate measure for growing products is to calculate delinquency using the AR from three months prior as the denominator. As the portfolio matures, the difference between the two measures should narrow. In practice, we often refer to these two measures as coincidental write-off vs. contractual write-off to distinguish between the “current” vs. “lag-adjusted” perspectives.</p>
+<ol start="2">
+<li><em>Risk Band-Level View</em></li>
+</ol>
+<p>Risk bands are among the most powerful tools for differentiating credit risk. They can be based on FICO scores or internal risk scores, depending on the audience and purpose. For instance, in a cross-product risk review, FICO will be more appropriate as different product may own respective risk score. At the risk-band level, we can monitor: new account and customer distribution, average line size,delinquency rate, accounts receivable by risk level. Tracking these metrics over time offers a clear view of risk trends and AR allocation. For simplicity, some reports use a risk-weighted index to represent the overall change in portfolio risk over time.</p>
+<p><strong>Designated Tracking for Specific Needs</strong></p>
+<ol>
+<li><code>New Account Delinquency Spike</code></li>
+</ol>
+<p>New account delinquency tracking focuses on recently approved customers. Two metrics are commonly used:</p>
 <ul>
-<li>Acquisition stage: How should credit risk be assessed for new products or new customer populations?</li>
-<li>Early performance: If signs of deterioration appear during the initial customer journey, how can we identify root causes and adjust policies accordingly?</li>
-<li>Credit line assignment: How do we determine an appropriate initial line, balancing customer experience with risk control?</li>
-<li>Customer management: How should we define customer strategies such as line increases, line decreases, suspensions, or closures?</li>
-<li>Pricing: How does risk influence pricing, and how can we design dynamic, risk-based pricing strategies?</li>
-<li>Modeling: How can machine learning and alternative data be leveraged to detect early signs of financial distress?</li>
+<li>Event delinquency rate (number of delinquent accounts ÷ total accounts)</li>
+<li>Dollar delinquency rate (delinquent balance ÷ total balance)</li>
 </ul>
-<p>Thank you for reading!</p>
+<p>An increase in new account delinquency can result from: a particular customer segment performing worse than expected, or a higher concentration of new accounts in riskier bands. To diagnose the issue:</p>
+<ul>
+<li>Risk band distribution charts to identify changes in population mix</li>
+<li>Tracking delinquency by risk band over time to find deteriorating segments. Once the root cause is identified, the credit team can take corrective actions—such as tightening risk controls or collaborating with Product and Marketing to attract higher-quality customers.
+If only dollar delinquency rises (with stable event delinquency), the likely cause is overly high initial credit lines for risky customers. Dashboards can be designed to track:</li>
+<li>Average initial line by segment over time</li>
+<li>The ratio of “average bad initial line” to “average good initial line”
+These indicators help assess whether initial line assignments are appropriately risk-adjusted.</li>
+</ul>
+<ol start="2">
+<li><code>Portfolio Delinquency Spike</code></li>
+</ol>
+<p>When overall portfolio performance worsens—after accounting for new-account and line-assignment effects, the root cause often lies in customer management, especially line reduction strategy. To analyze this, we look from two angles:</p>
+<ul>
+<li>Risk distribution — how the portfolio’s risk composition shifts over time</li>
+<li>Performance per risk band — how each risk segment performs</li>
+</ul>
+<p>In addition, by tracking delinquency across segments and monitoring the ratio of “average bad AR” to “average good AR”, we can evaluate how effective line management is at controlling risk. If the portfolio gradually shifts toward higher-risk segments, it may signal that the overall portfolio is under stress. The response should be to reduce exposure at majoirity population or revisit acquisition strategies. If the overall distribution is stable but only certain segments deteriorate, those segments can be isolated and addressed in both back-book (existing accounts) and front-book (new originations).</p>
+<ol start="3">
+<li><code>Growth</code></li>
+</ol>
+<p>Growth strategies often stem from fulfilling unmet needs—either those expressed by customers or identified by the lender, or creating needs. For fulfilling unmet needs we usually deploy line strategy, the growth driven by customer demand of higher line tends to be more sustainable and effective, the growth driven by lender incentives (e.g., aggressive line increases) can create unused exposure and contingent risk, especially in economic downturns. To measure growth effectiveness: for line increase strategy, compare the ratio of “balance increase” to “line increase” using A/B testing. For creating needs, promotional pricing can be one of options, to measure the effectinve of promotional pricing, track the incremental balance after promotions to ensure the lift in AR offsets the cost of the promotion. Both approaches provide a quantitative way to evaluate whether growth initiatives genuinely enhance portfolio health and profitability.</p>
 
 
   </div>
