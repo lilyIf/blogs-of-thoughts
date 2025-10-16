@@ -19,7 +19,7 @@ Risk bands are among the most powerful tools for differentiating credit risk. Th
 
 **Designated Tracking for Specific Needs**
 
-1. `New Account Delinquency Spike`
+1. *New Account Delinquency Spike*
 
 New account delinquency tracking focuses on recently approved customers. Two metrics are commonly used: 
 - Event delinquency rate (number of delinquent accounts ÷ total accounts)
@@ -33,7 +33,7 @@ If only dollar delinquency rises (with stable event delinquency), the likely cau
 - The ratio of “average bad initial line” to “average good initial line”
 These indicators help assess whether initial line assignments are appropriately risk-adjusted.
 
-2. `Portfolio Delinquency Spike`
+2. *Portfolio Delinquency Spike*
 
 When overall portfolio performance worsens—after accounting for new-account and line-assignment effects, the root cause often lies in customer management, especially line reduction strategy. To analyze this, we look from two angles:
 - Risk distribution — how the portfolio’s risk composition shifts over time
@@ -41,6 +41,6 @@ When overall portfolio performance worsens—after accounting for new-account an
 
 In addition, by tracking delinquency across segments and monitoring the ratio of “average bad AR” to “average good AR”, we can evaluate how effective line management is at controlling risk. If the portfolio gradually shifts toward higher-risk segments, it may signal that the overall portfolio is under stress. The response should be to reduce exposure at majoirity population or revisit acquisition strategies. If the overall distribution is stable but only certain segments deteriorate, those segments can be isolated and addressed in both back-book (existing accounts) and front-book (new originations).
 
-3. `Growth`
+3. *Growth*
 
 Growth strategies often stem from fulfilling unmet needs—either those expressed by customers or identified by the lender, or creating needs. For fulfilling unmet needs we usually deploy line strategy, the growth driven by customer demand of higher line tends to be more sustainable and effective, the growth driven by lender incentives (e.g., aggressive line increases) can create unused exposure and contingent risk, especially in economic downturns. To measure growth effectiveness: for line increase strategy, compare the ratio of “balance increase” to “line increase” using A/B testing. For creating needs, promotional pricing can be one of options, to measure the effectinve of promotional pricing, track the incremental balance after promotions to ensure the lift in AR offsets the cost of the promotion. Both approaches provide a quantitative way to evaluate whether growth initiatives genuinely enhance portfolio health and profitability.
