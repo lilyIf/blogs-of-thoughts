@@ -2,6 +2,7 @@
 draft = false
 title = 'Pricing'
 showDate = false
+weight = 5
 +++
 Pricing is one of the most critical decisions in lending, typically co-owned by the product and risk teams, as it has a direct and significant impact on customer behavior and product usage. We’ve often observed shifts in loan term adoption driven purely by changes in the pricing strategy. Because pricing and risk are inseparable, an effective pricing framework must be built on a comprehensive understanding of risk levels and their inherent uncertainty.
 

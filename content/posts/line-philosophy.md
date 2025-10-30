@@ -2,6 +2,7 @@
 draft = false
 title = 'Line Philosophy'
 showDate = false
+weight = 4
 +++
 **Initial Line Decision**
 

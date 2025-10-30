@@ -16,20 +16,6 @@
 &lt;p&gt;Credit risk management is a cornerstone of the lending industry. Since the lending business model relies on balancing risk and return, the key objective is to control credit risk to achieve predictable and profitable outcomes within a defined risk appetite. A lender’s risk appetite reflects its tolerance for uncertainty — the higher the uncertainty, the greater the margin buffer required to absorb potential losses. Therefore, the role of a credit risk manager is to align risk appetite with business goals, driving portfolio growth with calculated risk, while continuously monitoring acquisition quality and portfolio performance to ensure ongoing alignment with strategy.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Credit Deshboard: A Core Function of Credit Teams</title>
-      <link>https://example.com/posts/portfolio-tracking/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/posts/portfolio-tracking/</guid>
-      <description>&lt;p&gt;Defining and monitoring portfolio credit dashboard is one of the most critical responsibilities of a credit team. For credit team, the dashboard can provide the information to track credit performance against target rate, help detect early warning signals of credit deterioration and informs future credit strategies—whether to expand or tighten credit criteria, and it can measure efficiency of varied risk strategies. Beyond the credit team, the dashboard can also faciliate the discussion with other departments such as finance and product teams, for example to align delinquency projections with finance team, and evaluate risk-based pricing strategies with product team.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Credit Expansion</title>
-      <link>https://example.com/posts/credit-expansion/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/posts/credit-expansion/</guid>
-      <description>&lt;p&gt;Credit expansion is one of the most exciting yet daunting responsibilities for a credit risk manager. It represents an uncharted landscape filled with opportunities and uncertainty. The scope is broad, covering new market entry, new product launches, and expansion into new customer populations. From my experience in new product and population expansion, such initiatives require a highly cautious and data-driven approach. In new population expansion, which often targets higher-risk borrowers with limited credit history, lenders can either start small with sufficient financial reserves, or transfer part of the risk externally to gain early learning benefits. In new product expansion, ideally, one can leverage credit bureau data to observe how existing customers perform externally on similar products, aiding model development and risk calibration. Alternatively, comparing products performance at similar risk levels at overall population can help estimate the expected risk level. If the new product has historical precedence, it can be mapped to an existing product to infer today’s risk characteristics. When the new product is merely a variant of an existing offering, certain proxy relationships may be derived. However, because different loan terms attract different borrowing motivations, it is often challenging to generalize a direct relationship between the two.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Credit Model</title>
       <link>https://example.com/posts/credit-model/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -37,6 +23,13 @@
       <description>&lt;p&gt;&lt;strong&gt;Model-Driven Credit Strategy&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;All credit strategies should be powered by statistical or machine learning models whenever sufficient data samples are available. Models can process and capture far higher-dimensional data relationships than human judgment alone. Taking a new account model as an example, a higher-dimensional model can better differentiate between good and bad applicants — identifying true defaulters with less sacrifice of non-defaulters.&lt;/p&gt;
 &lt;p&gt;To evaluate model performance, we commonly use two metrics:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Credit Expansion</title>
+      <link>https://example.com/posts/credit-expansion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/posts/credit-expansion/</guid>
+      <description>&lt;p&gt;Credit expansion is one of the most exciting yet daunting responsibilities for a credit risk manager. It represents an uncharted landscape filled with opportunities and uncertainty. The scope is broad, covering new market entry, new product launches, and expansion into new customer populations. From my experience in new product and population expansion, such initiatives require a highly cautious and data-driven approach. In new population expansion, which often targets higher-risk borrowers with limited credit history, lenders can either start small with sufficient financial reserves, or transfer part of the risk externally to gain early learning benefits. In new product expansion, ideally, one can leverage credit bureau data to observe how existing customers perform externally on similar products, aiding model development and risk calibration. Alternatively, comparing products performance at similar risk levels at overall population can help estimate the expected risk level. If the new product has historical precedence, it can be mapped to an existing product to infer today’s risk characteristics. When the new product is merely a variant of an existing offering, certain proxy relationships may be derived. However, because different loan terms attract different borrowing motivations, it is often challenging to generalize a direct relationship between the two.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Line Philosophy</title>
@@ -52,6 +45,13 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.com/posts/pricing/</guid>
       <description>&lt;p&gt;Pricing is one of the most critical decisions in lending, typically co-owned by the product and risk teams, as it has a direct and significant impact on customer behavior and product usage. We’ve often observed shifts in loan term adoption driven purely by changes in the pricing strategy. Because pricing and risk are inseparable, an effective pricing framework must be built on a comprehensive understanding of risk levels and their inherent uncertainty.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Credit Deshboard: A Core Function of Credit Teams</title>
+      <link>https://example.com/posts/portfolio-tracking/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/posts/portfolio-tracking/</guid>
+      <description>&lt;p&gt;Defining and monitoring a portfolio credit dashboard is one of the most critical responsibilities of a credit team. A well-designed dashboard enables the team to monitor credit performance against targets, detect early warning signals of credit deterioration, and inform strategic decisions—such as whether to expand or tighten credit criteria. It also helps measure the effectiveness of various risk strategies. Beyond the credit function, the dashboard supports cross-functional discussions with finance and product teams. For instance, it helps align delinquency projections with finance and evaluate risk-based pricing strategies with product. Below are several key dashboard components and charts that help visualize portfolio risk, monitor performance, and identify opportunities to enhance risk control and strategy efficiency.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -2,6 +2,7 @@
 draft = false
 title = 'Credit Expansion'
 showDate = false
+weight = 3
 +++
 Credit expansion is one of the most exciting yet daunting responsibilities for a credit risk manager. It represents an uncharted landscape filled with opportunities and uncertainty. The scope is broad, covering new market entry, new product launches, and expansion into new customer populations. From my experience in new product and population expansion, such initiatives require a highly cautious and data-driven approach. In new population expansion, which often targets higher-risk borrowers with limited credit history, lenders can either start small with sufficient financial reserves, or transfer part of the risk externally to gain early learning benefits. In new product expansion, ideally, one can leverage credit bureau data to observe how existing customers perform externally on similar products, aiding model development and risk calibration. Alternatively, comparing products performance at similar risk levels at overall population can help estimate the expected risk level. If the new product has historical precedence, it can be mapped to an existing product to infer today’s risk characteristics. When the new product is merely a variant of an existing offering, certain proxy relationships may be derived. However, because different loan terms attract different borrowing motivations, it is often challenging to generalize a direct relationship between the two.
 

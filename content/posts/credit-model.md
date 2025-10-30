@@ -2,6 +2,7 @@
 draft = false
 title = 'Credit Model'
 showDate = false
+weight = 2
 +++
 **Model-Driven Credit Strategy**
 
