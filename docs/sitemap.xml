@@ -2,9 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/categories/</loc>
-  </url><url>
     <loc>https://example.com/posts/portfolio-tracking/</loc>
+  </url><url>
+    <loc>https://example.com/categories/</loc>
   </url><url>
     <loc>https://example.com/posts/credit-expansion/</loc>
   </url><url>
