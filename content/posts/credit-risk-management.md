@@ -2,6 +2,7 @@
 draft = false
 title = 'Credit Risk Management'
 showDate = false
+weight = 1
 +++
 **What and Why**
 
